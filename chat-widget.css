@@ -1,59 +1,82 @@
-#chatbot {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 320px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0,0,0,.2);
-  font-family: system-ui;
-  z-index: 9999;
-}
-
-#chat-header {
-  background: #0f4c81;
-  color: #fff;
-  padding: 12px;
-  font-weight: bold;
-}
-
-#chat-header .notice {
-  font-size: 11px;
-  opacity: .85;
-  margin-top: 4px;
-}
-
-#chat-body {
-  height: 260px;
-  overflow-y: auto;
-  padding: 10px;
-}
-
-.user {
-  text-align: right;
-  margin: 6px 0;
-}
-
-.bot {
-  text-align: left;
-  margin: 6px 0;
-  white-space: pre-line;
-}
-
-#chat-input {
+#imweb-chatbot {
   display: flex;
-  border-top: 1px solid #eee;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #7866ff, #4da5ff);
+  color: #ffffff;
+  box-sizing: border-box;
+  font-family: Pretendard, sans-serif;
 }
 
-#chat-input input {
+.hero-left {
+  width: 60%;
+}
+
+.small-title {
+  font-size: 13px;
+  opacity: 0.85;
+  letter-spacing: 1px;
+}
+
+.hero-left h1 {
+  font-size: 38px;
+  line-height: 1.3;
+  margin: 12px 0 20px;
+}
+
+.hero-left strong {
+  color: #ffe36e;
+}
+
+.hero-input {
+  display: flex;
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 6px;
+  margin-bottom: 18px;
+}
+
+.hero-input input {
   flex: 1;
   border: none;
-  padding: 10px;
+  padding: 14px 18px;
+  font-size: 15px;
+  outline: none;
 }
 
-#chat-input button {
-  background: #0f4c81;
-  color: #fff;
+.hero-input button {
+  width: 48px;
   border: none;
-  padding: 0 14px;
+  border-radius: 50%;
+  background: #5cffb1;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-actions button {
+  flex: 1;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hero-right {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.bot-avatar {
+  font-size: 110px;
 }
