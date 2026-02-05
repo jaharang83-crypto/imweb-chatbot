@@ -1,82 +1,84 @@
-#imweb-chatbot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 48px;
-  border-radius: 28px;
-  background: linear-gradient(135deg, #7866ff, #4da5ff);
-  color: #ffffff;
+* {
   box-sizing: border-box;
-  font-family: Pretendard, sans-serif;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont;
 }
 
-.hero-left {
-  width: 60%;
-}
-
-.small-title {
-  font-size: 13px;
-  opacity: 0.85;
-  letter-spacing: 1px;
-}
-
-.hero-left h1 {
-  font-size: 38px;
-  line-height: 1.3;
-  margin: 12px 0 20px;
-}
-
-.hero-left strong {
-  color: #ffe36e;
-}
-
-.hero-input {
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6c5cff, #4da3ff);
   display: flex;
-  background: #ffffff;
-  border-radius: 40px;
-  padding: 6px;
-  margin-bottom: 18px;
+  align-items: center;
+  padding: 80px;
+  color: white;
 }
 
-.hero-input input {
-  flex: 1;
+.hero-content {
+  max-width: 520px;
+}
+
+.hero-eyebrow {
+  letter-spacing: 2px;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+.hero h1 span {
+  color: #b8ffb0;
+}
+
+.chatbox {
+  display: flex;
+  background: white;
+  border-radius: 999px;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.chatbox input {
   border: none;
-  padding: 14px 18px;
-  font-size: 15px;
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 16px;
   outline: none;
 }
 
-.hero-input button {
-  width: 48px;
+.chatbox button {
   border: none;
+  background: #4da3ff;
+  color: white;
   border-radius: 50%;
-  background: #5cffb1;
-  font-size: 18px;
+  width: 44px;
   cursor: pointer;
 }
 
-.hero-actions {
+.quick-buttons {
   display: flex;
-  gap: 12px;
+  gap: 10px;
+  margin-bottom: 24px;
 }
 
-.hero-actions button {
-  flex: 1;
-  padding: 14px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.2);
+.quick-buttons button {
+  background: white;
   border: none;
-  color: #fff;
-  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 12px;
   cursor: pointer;
+  font-weight: 600;
 }
 
-.hero-right {
-  width: 35%;
-  display: flex;
-  justify-content: center;
+#chat-result {
+  margin-top: 20px;
 }
 
-.bot-avatar {
-  font-size: 110px;
+.chat-bubble {
+  background: rgba(255,255,255,0.15);
+  padding: 16px;
+  border-radius: 16px;
+  line-height: 1.5;
 }
